@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic portfolio of Ajayanand K., PhD Scholar in Computer Science, researching computer networks, cybersecurity, AI and intelligent network systems.">
+<title>Ajayanand K. | Academic Portfolio</title>
+<style>
+:root{--navy:#10243b;--navy2:#183653;--blue:#2f6f9f;--gold:#c6a56b;--ink:#1d2b38;--muted:#627181;--paper:#f5f7f9;--white:#fff;--line:#dce3e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
+header{background:rgba(16,36,59,.97);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(255,255,255,.12)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Georgia,serif;font-size:1.25rem;letter-spacing:.3px}.brand span{color:var(--gold)}nav{display:flex;gap:24px;font-size:.88rem;color:#e2eaf1}nav a:hover{color:#e0c18c}.menu{display:none;background:none;border:1px solid #6c8093;color:white;border-radius:8px;padding:7px 10px}
+.hero{background:linear-gradient(120deg,#10243b 0%,#183653 65%,#234d6b 100%);color:white;padding:92px 0 86px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-110px;top:-180px;box-shadow:0 0 0 45px rgba(255,255,255,.025),0 0 0 95px rgba(255,255,255,.02)}.hero-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:60px;align-items:center;position:relative;z-index:1}.eyebrow{color:#e0c18c;text-transform:uppercase;letter-spacing:2.4px;font-size:.76rem;font-weight:700}.hero h1{font:clamp(2.8rem,6vw,5rem)/1.05 Georgia,serif;margin:17px 0}.hero h1 span{color:#e0c18c}.hero .lead{font-size:1.12rem;color:#d5e0e9;max-width:650px}.hero .sub{color:#afc2d1;font-size:.96rem;margin-top:22px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;padding:12px 19px;border-radius:5px;font-weight:650;font-size:.9rem}.primary{background:var(--gold);color:#15283a}.outline{border:1px solid #9fb2c2;color:white}.monogram{width:230px;height:230px;border-radius:50%;border:1px solid rgba(224,193,140,.7);display:grid;place-items:center;margin:auto;background:rgba(255,255,255,.045);box-shadow:0 0 0 15px rgba(255,255,255,.025)}.monogram strong{font:4.4rem Georgia,serif;color:#e0c18c}.monogram small{display:block;text-align:center;color:#d5e0e9;font-size:.68rem;letter-spacing:2px;margin-top:-45px}
+section{padding:78px 0}.section-head{margin-bottom:34px}.kicker{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:750}.section-head h2{font:2.25rem Georgia,serif;color:var(--navy);margin:7px 0 8px}.section-head p{color:var(--muted);max-width:720px;margin:0}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px}.about-copy p{margin-top:0;color:#4e5d6a}.fact-panel{background:white;border:1px solid var(--line);padding:25px;border-radius:8px}.fact{padding:12px 0;border-bottom:1px solid var(--line)}.fact:last-child{border:0}.fact b{display:block;color:var(--navy);font-size:.88rem}.fact span{color:var(--muted);font-size:.9rem}
+.band{background:#eaf0f4}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:8px;padding:23px;min-height:175px}.card .num{font:1.7rem Georgia,serif;color:var(--gold)}.card h3{font:1.15rem Georgia,serif;color:var(--navy);margin:8px 0}.card p{font-size:.9rem;color:var(--muted);margin:0}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.tag{border:1px solid #cbd7e0;background:white;padding:8px 13px;border-radius:4px;color:#34536c;font-size:.88rem}
+.project{display:grid;grid-template-columns:65px 1fr;gap:20px;padding:25px 0;border-bottom:1px solid var(--line)}.project:last-child{border:0}.project-no{font:2rem Georgia,serif;color:var(--gold)}.project h3{font:1.3rem Georgia,serif;color:var(--navy);margin:0 0 7px}.project p{color:var(--muted);margin:0 0 10px}.meta{font-size:.8rem;color:var(--blue);font-weight:650}
+.publication{background:var(--navy);color:white;border-radius:9px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}.publication h3{font:1.35rem Georgia,serif;margin:0 0 10px}.publication p{color:#cbd8e2;margin:5px 0;font-size:.92rem}.doi{display:inline-block;margin-top:12px;color:#e0c18c;border-bottom:1px solid #8e7958;font-weight:650}.pub-label{font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:#e0c18c}
+.timeline{border-left:2px solid #cbd7e0;margin-left:8px;padding-left:25px}.edu{position:relative;padding:0 0 25px}.edu:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);left:-31px;top:8px}.edu h3{margin:0;color:var(--navy);font:1.2rem Georgia,serif}.edu p{margin:4px 0;color:var(--muted);font-size:.92rem}
+.contact{background:#eaf0f4}.contact-box{background:white;border:1px solid var(--line);border-radius:8px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-box h3{font:1.5rem Georgia,serif;color:var(--navy);margin:0}.contact-box p{color:var(--muted);margin:6px 0 0}.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links a{border:1px solid var(--line);padding:9px 13px;border-radius:4px;color:var(--blue);font-weight:650;font-size:.86rem}
+footer{background:#0b1b2b;color:#aebdca;padding:24px 0;font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:70px 0}.monogram{width:175px;height:175px}.monogram strong{font-size:3.4rem}.cards{grid-template-columns:1fr 1fr}.publication{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:18px 5%;flex-direction:column;gap:13px}.nav.open nav{display:flex}.menu{display:block}.cards{grid-template-columns:1fr}.hero h1{font-size:3rem}.project{grid-template-columns:38px 1fr;gap:12px}section{padding:58px 0}}
+
+/* Enhanced academic visual system */
+.hero{isolation:isolate}
+.hero-grid{position:relative;z-index:2}
+.hero-visual{position:relative;min-height:330px;display:grid;place-items:center}
+.network-art{width:min(100%,390px);filter:drop-shadow(0 18px 35px rgba(0,0,0,.18));overflow:visible}
+.network-art .orbit{fill:none;stroke:rgba(224,193,140,.38);stroke-width:1.2;stroke-dasharray:5 8;transform-origin:190px 165px;animation:spin 34s linear infinite}
+.network-art .orbit.two{animation-direction:reverse;animation-duration:46s;stroke:rgba(174,205,226,.3)}
+.network-art .link{stroke:#9ec5df;stroke-width:1.5;stroke-dasharray:5 7;animation:dash 8s linear infinite}
+.network-art .node{fill:#e0c18c;stroke:#fff;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-in-out infinite}
+.network-art .node:nth-of-type(2n){animation-delay:.7s}
+.network-art .core{fill:#173b59;stroke:#e0c18c;stroke-width:2.5}
+.network-art text{fill:#e8f0f5;font:11px Arial,sans-serif;letter-spacing:1px}
+.hero-glow{position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(69,133,174,.2);filter:blur(55px);animation:float 7s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes dash{to{stroke-dashoffset:-120}}@keyframes pulse{0%,100%{r:6;opacity:.85}50%{r:9;opacity:1}}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,-16px)}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+.card{position:relative;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),var(--blue));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}.card:hover{transform:translateY(-7px);box-shadow:0 18px 35px rgba(16,36,59,.1);border-color:#b7c9d7}.card:hover:before{transform:scaleX(1)}
+.tag{transition:transform .2s ease,background .2s ease,color .2s ease}.tag:hover{transform:translateY(-3px);background:var(--navy);color:white}
+.project{transition:padding .25s ease}.project:hover{padding-left:10px}.project-no{transition:transform .3s ease}.project:hover .project-no{transform:rotate(-8deg) scale(1.12)}
+.publication{position:relative;overflow:hidden}.publication:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(224,193,140,.22);border-radius:50%;right:-90px;bottom:-145px;box-shadow:0 0 0 25px rgba(224,193,140,.035),0 0 0 55px rgba(224,193,140,.025);pointer-events:none}
+.btn,.contact-links a{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}.btn:hover,.contact-links a:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.section-head h2{position:relative;display:inline-block}.section-head h2:after{content:"";display:block;width:54px;height:3px;background:var(--gold);margin-top:10px}
+.timeline{position:relative}.timeline:before{content:"";position:absolute;left:-2px;top:0;bottom:0;width:2px;background:linear-gradient(var(--gold),#cbd7e0)}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* Full-page visual treatment: every section has its own graphic identity */
+section{position:relative;overflow:hidden}
+section:not(.hero):before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.38;background-image:radial-gradient(circle at 12% 18%,rgba(47,111,159,.10) 0 2px,transparent 3px),radial-gradient(circle at 88% 72%,rgba(198,165,107,.13) 0 2px,transparent 3px);background-size:78px 78px,112px 112px;animation:driftDots 28s linear infinite}
+section>*{position:relative;z-index:1}
+@keyframes driftDots{to{background-position:78px 78px,-112px -112px}}
+.visual-strip{height:4px;width:100%;background:linear-gradient(90deg,transparent,var(--gold),var(--blue),transparent);background-size:200% 100%;animation:shimmer 5s linear infinite;margin:0 0 25px}
+@keyframes shimmer{to{background-position:200% 0}}
+.section-art{position:absolute;right:5%;top:54px;width:150px;height:150px;opacity:.16;pointer-events:none}
+.section-art circle,.section-art path{fill:none;stroke:var(--blue);stroke-width:1.5;stroke-dasharray:5 7;animation:spin 30s linear infinite;transform-origin:center}
+.section-art .solid{fill:var(--gold);stroke:none;animation:pulse 3s ease-in-out infinite}
+.section-head{position:relative}
+.section-head:after{content:"";display:block;width:100%;max-width:100%;height:1px;margin-top:22px;background:linear-gradient(90deg,var(--line),transparent)}
+.about-visual{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.mini-stat{background:linear-gradient(145deg,#173653,#10243b);color:white;border-radius:7px;padding:16px 12px;text-align:center;overflow:hidden;position:relative}
+.mini-stat:after{content:"";position:absolute;width:70px;height:70px;border:1px solid rgba(224,193,140,.35);border-radius:50%;right:-28px;top:-28px}
+.mini-stat strong{display:block;color:#e0c18c;font:1.6rem Georgia,serif}.mini-stat span{font-size:.72rem;color:#d3dfe8}
+.research-visual{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.research-visual .visual-card{min-height:155px;border-radius:8px;padding:18px;color:white;background:linear-gradient(145deg,#1c4564,#10243b);position:relative;overflow:hidden}
+.visual-card svg{width:58px;height:58px;margin-bottom:9px;overflow:visible}
+.visual-card svg *{stroke:#e0c18c;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.visual-card h4{margin:0;font:1.05rem Georgia,serif}.visual-card small{color:#c2d3df}
+.skill-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:25px}
+.skill-group{background:white;border:1px solid var(--line);padding:20px;border-radius:8px}
+.skill-group h3{font:1.1rem Georgia,serif;color:var(--navy);margin:0 0 13px}
+.skill-group .tag{display:inline-block;margin:4px}
+.project-visual{height:116px;border-radius:6px;background:linear-gradient(135deg,#10243b,#285779);margin-bottom:14px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.project-visual svg{width:90%;height:100%}
+.project-visual svg *{fill:none;stroke:#e0c18c;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.project-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.13) 48%,transparent 70%);transform:translateX(-120%);animation:scan 5s ease-in-out infinite}
+@keyframes scan{55%,100%{transform:translateX(120%)}}
+.project-list-card{background:white;border:1px solid var(--line);padding:20px;border-radius:8px;transition:transform .3s,box-shadow .3s}
+.project-list-card:hover{transform:translateY(-6px);box-shadow:0 15px 30px rgba(16,36,59,.10)}
+.project-list-card h3{font:1.12rem Georgia,serif;color:var(--navy);margin:0 0 8px}
+.project-list-card p{font-size:.88rem;color:var(--muted);margin:0 0 10px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.pub-graphic{width:120px;height:120px;border:1px solid rgba(224,193,140,.5);border-radius:50%;display:grid;place-items:center;position:relative;animation:float 6s ease-in-out infinite}
+.pub-graphic:before,.pub-graphic:after{content:"";position:absolute;inset:10px;border:1px dashed rgba(224,193,140,.5);border-radius:50%;animation:spin 18s linear infinite}
+.pub-graphic:after{inset:-9px;animation-direction:reverse;animation-duration:28s}
+.pub-graphic span{font:1.8rem Georgia,serif;color:#e0c18c}
+.edu-visual{display:flex;gap:12px;align-items:center;margin:12px 0 0}
+.edu-visual span{width:34px;height:34px;border-radius:50%;background:#173653;color:#e0c18c;display:grid;place-items:center;font-size:.8rem;box-shadow:0 0 0 5px #eaf0f4}
+.contact-orbit{width:210px;height:110px;position:absolute;right:2%;top:8px;opacity:.4}
+.contact-orbit circle{fill:none;stroke:var(--blue);stroke-dasharray:4 5;animation:spin 20s linear infinite;transform-origin:center}
+.contact-orbit .dot{fill:var(--gold);stroke:none;animation:pulse 2s infinite}
+@media(max-width:700px){.section-art{width:95px;height:95px;right:2%;top:35px}.research-visual,.skill-groups,.project-grid{grid-template-columns:1fr}.about-visual{grid-template-columns:1fr 1fr 1fr}.pub-graphic{width:90px;height:90px}.contact-orbit{display:none}}
+@media(prefers-reduced-motion:reduce){section:before,.visual-strip,.project-visual:after,.pub-graphic,.section-art *{animation:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav" id="nav"><a class="brand" href="#home">AJ<span>.</span></a><nav><a href="#about">About</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#publication">Publication</a><a href="#education">Education</a><a href="#contact">Contact</a></nav><button class="menu" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Toggle navigation">Menu</button></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid"><div><div class="eyebrow">Academic portfolio · Computer Science</div><h1>Ajayanand <span>K.</span></h1><p class="lead">PhD Scholar in Computer Science, exploring intelligent and secure network systems through artificial intelligence, machine learning and deep reinforcement learning.</p><p class="sub">Computer Networks · Cybersecurity · AI &amp; Network Security · 5G/6G Networks</p><div class="actions"><a class="btn primary" href="#research">Explore my research</a><a class="btn outline" href="#contact">Get in touch</a></div></div>
+<div class="hero-visual" aria-label="Animated network research illustration">
+<div class="hero-glow"></div>
+<svg class="network-art" viewBox="0 0 380 330" role="img" aria-label="Connected network nodes surrounding an AI core">
+ <ellipse class="orbit" cx="190" cy="165" rx="150" ry="108"/>
+ <ellipse class="orbit two" cx="190" cy="165" rx="116" ry="145" transform="rotate(35 190 165)"/>
+ <g class="link" fill="none">
+  <path d="M190 165 L75 92 L52 205 L145 278 L275 250 L326 128 L190 165"/>
+  <path d="M190 165 L190 40 M190 165 L300 65 M190 165 L83 270 M190 165 L310 285"/>
+  <path d="M75 92 L190 40 L300 65 L326 128 M52 205 L145 278 L275 250 L310 285"/>
+ </g>
+ <circle class="core" cx="190" cy="165" r="43"/>
+ <text x="190" y="160" text-anchor="middle" style="font-size:18px;font-family:Georgia,serif;fill:#e0c18c">AI</text>
+ <text x="190" y="178" text-anchor="middle" style="font-size:8px">NETWORKS</text>
+ <circle class="node" cx="75" cy="92" r="7"/><circle class="node" cx="52" cy="205" r="7"/>
+ <circle class="node" cx="145" cy="278" r="7"/><circle class="node" cx="275" cy="250" r="7"/>
+ <circle class="node" cx="326" cy="128" r="7"/><circle class="node" cx="190" cy="40" r="7"/>
+ <circle class="node" cx="300" cy="65" r="7"/><circle class="node" cx="83" cy="270" r="7"/>
+ <circle class="node" cx="310" cy="285" r="7"/>
+ <text x="48" y="75">SECURITY</text><text x="272" y="43">5G / 6G</text>
+ <text x="262" y="310">AI RESEARCH</text>
+</svg></div></div></section>
+<section id="about" class="reveal"><div class="wrap"><svg class="section-art" viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="58"/><circle cx="75" cy="75" r="38"/><circle class="solid" cx="75" cy="17" r="5"/><circle class="solid" cx="130" cy="90" r="4"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">01 / About</div><h2>About me</h2><p>A researcher focused on applying intelligent computational methods to practical networking and cybersecurity challenges.</p></div><div class="about-grid"><div class="about-copy"><p>I am Ajayanand K., a PhD Scholar in Computer Science at SNS College. My academic and research interests lie at the intersection of computer networks, cybersecurity and artificial intelligence.</p><p>My work explores machine-learning-based intrusion detection, reinforcement-learning-driven network optimization, and adaptive mechanisms for improving the security, efficiency and resilience of next-generation networks.</p><p>I am interested in research that connects algorithm design with reproducible experimentation and practical network environments.</p></div><div class="fact-panel"><div class="fact"><b>Current role</b><span>PhD Scholar in Computer Science</span></div><div class="fact"><b>Research domain</b><span>Computer Networks &amp; Cybersecurity</span></div><div class="fact"><b>Institution</b><span>SNS College</span></div><div class="fact"><b>Research approach</b><span>AI, Deep Learning &amp; Reinforcement Learning</span></div></div></div>
+<div class="about-visual">
+ <div class="mini-stat"><strong>AI</strong><span>Research approach</span></div>
+ <div class="mini-stat"><strong>5G/6G</strong><span>Network focus</span></div>
+ <div class="mini-stat"><strong>IEEE</strong><span>Publication</span></div>
+</div></div></section>
+<section class="band reveal" id="research"><div class="wrap"><svg class="section-art" viewBox="0 0 150 150" aria-hidden="true"><path d="M75 12L138 48V112L75 148L12 112V48Z"/><circle cx="75" cy="80" r="35"/><circle class="solid" cx="75" cy="80" r="7"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">02 / Research focus</div><h2>Research interests</h2><p>Developing adaptive, data-driven approaches for secure and efficient network operation.</p></div><div class="cards"><article class="card"><div class="num">01</div><h3>Intelligent Network Security</h3><p>Machine learning and deep-learning methods for intrusion detection, anomaly identification and adaptive threat mitigation.</p></article><article class="card"><div class="num">02</div><h3>Deep Reinforcement Learning</h3><p>Learning-based decision systems for dynamic firewall optimization, resource allocation and network control.</p></article><article class="card"><div class="num">03</div><h3>Next-Generation Networks</h3><p>Network slicing, secure routing, congestion management and intelligent resource coordination in 5G/6G environments.</p></article></div>
+<div class="research-visual">
+ <div class="visual-card"><svg viewBox="0 0 60 60"><path d="M8 30H20L27 15L37 45L44 30H54"/><circle cx="27" cy="15" r="3"/><circle cx="37" cy="45" r="3"/></svg><h4>Detection</h4><small>Identify abnormal traffic patterns</small></div>
+ <div class="visual-card"><svg viewBox="0 0 60 60"><path d="M30 6L49 17V40L30 52L11 40V17Z"/><path d="M21 29L28 36L41 22"/></svg><h4>Decision</h4><small>Learn adaptive security policies</small></div>
+ <div class="visual-card"><svg viewBox="0 0 60 60"><path d="M8 45H52M12 39L23 28L32 34L48 13"/><path d="M39 13H48V22"/></svg><h4>Optimization</h4><small>Improve network performance</small></div>
+</div></div></section>
+<section id="skills" class="reveal"><div class="wrap"><svg class="section-art" viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="58"/><path d="M75 17V133M17 75H133M34 34L116 116M116 34L34 116"/><circle class="solid" cx="75" cy="75" r="8"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">03 / Technical profile</div><h2>Technical skills</h2><p>Tools and methods used across my research and development work.</p></div><div class="skill-groups">
+<div class="skill-group"><h3>AI &amp; Machine Learning</h3><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">CNN-LSTM</span><span class="tag">DQN / Deep RL</span><span class="tag">Scikit-learn</span><span class="tag">TensorFlow / Keras</span></div>
+<div class="skill-group"><h3>Programming &amp; Development</h3><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Model Evaluation</span><span class="tag">Data Preprocessing</span></div>
+<div class="skill-group"><h3>Networks &amp; Cybersecurity</h3><span class="tag">Network Security</span><span class="tag">Intrusion Detection</span><span class="tag">SDN Concepts</span><span class="tag">Network Traffic Analysis</span></div>
+<div class="skill-group"><h3>Datasets &amp; Research</h3><span class="tag">NSL-KDD</span><span class="tag">CICIDS2017</span><span class="tag">Experimental Evaluation</span><span class="tag">5G / 6G Networks</span></div>
+</div></div></section>
+<section class="band reveal" id="projects"><div class="wrap"><svg class="section-art" viewBox="0 0 150 150" aria-hidden="true"><path d="M20 110L55 45L92 90L130 25"/><circle cx="20" cy="110" r="8"/><circle cx="55" cy="45" r="8"/><circle cx="92" cy="90" r="8"/><circle class="solid" cx="130" cy="25" r="7"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">04 / Selected work</div><h2>Research projects</h2><p>Selected research and development directions in intelligent network systems.</p></div>
+<div class="project-grid">
+<article class="project-list-card"><div class="project-visual"><svg viewBox="0 0 300 116"><path d="M35 58H90L120 25L160 88L195 50H265"/><circle cx="35" cy="58" r="8"/><circle cx="120" cy="25" r="8"/><circle cx="160" cy="88" r="8"/><circle cx="265" cy="50" r="8"/><path d="M135 58H165M150 43V73"/></svg></div><h3>Reinforcement Learning-Based Dynamic Firewall Optimization</h3><p>An adaptive firewall framework combining anomaly detection with reinforcement-learning-based policy decisions to improve network threat response.</p><div class="meta">DQN · LSTM-CNN · NSL-KDD · CICIDS2017 · SDN</div></article>
+<article class="project-list-card"><div class="project-visual"><svg viewBox="0 0 300 116"><path d="M30 82C65 82 65 30 100 30S135 82 170 82S205 30 240 30H270"/><path d="M30 92H270M30 18V92"/><circle cx="100" cy="30" r="6"/><circle cx="170" cy="82" r="6"/><circle cx="240" cy="30" r="6"/></svg></div><h3>CNN-LSTM-Based Network Intrusion Detection</h3><p>A hybrid deep-learning approach for learning spatial and sequential traffic patterns, with comparative evaluation against conventional machine-learning models.</p><div class="meta">CNN-LSTM · Deep Learning · Intrusion Detection</div></article>
+<article class="project-list-card"><div class="project-visual"><svg viewBox="0 0 300 116"><path d="M35 85L85 45L135 68L185 28L265 48"/><path d="M35 95H265M35 15V95"/><circle cx="85" cy="45" r="7"/><circle cx="135" cy="68" r="7"/><circle cx="185" cy="28" r="7"/><circle cx="265" cy="48" r="7"/></svg></div><h3>Intelligent Congestion Control for 5G/6G Networks</h3><p>A proposed research direction investigating deep reinforcement learning for adaptive congestion control, anomaly detection and resource coordination across network slices.</p><div class="meta">5G/6G · Network Slicing · DQN / PPO · NS-3 / Mininet</div></article>
+<article class="project-list-card"><div class="project-visual"><svg viewBox="0 0 300 116"><path d="M30 80L70 65L110 70L150 40L190 50L230 22L270 32"/><path d="M30 95H270M30 15V95"/><path d="M230 22L270 22L270 32"/></svg></div><h3>Network Traffic Prediction and Adaptive Management</h3><p>A network analytics direction using sequence-learning models to predict congestion and support responsive traffic-management decisions.</p><div class="meta">LSTM · Traffic Prediction · Adaptive Control</div></article>
+</div></div></section>
+<section id="publication" class="reveal"><div class="wrap"><svg class="section-art" viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="60"/><circle cx="75" cy="75" r="42"/><path d="M48 52H102V98H48Z M58 64H92M58 76H92M58 88H83"/><circle class="solid" cx="118" cy="31" r="6"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">05 / Scholarly work</div><h2>Publication</h2><p>Peer-reviewed research contribution.</p></div><div class="publication"><div><div class="pub-label">IEEE conference paper · 2026</div><h3>Reinforcement Learning-Based Dynamic Firewall Optimization for Intelligent Anomaly Detection and Prevention</h3><p>Authors: SHANTHINI K. S., AJAYANAND K., VIVEK S. and ARJUN K.</p><p>2026 9th International Conference on Intelligent Computing and Control Systems (ICICCS).</p><a class="doi" href="https://doi.org/10.1109/ICICCS67901.2026.11502823" target="_blank" rel="noopener">View publication / DOI ↗</a></div><div class="pub-graphic"><span>IEEE</span></div></div></div></section>
+<section class="band reveal" id="education"><div class="wrap"><svg class="section-art" viewBox="0 0 150 150" aria-hidden="true"><path d="M18 55L75 25L132 55L75 85Z M35 65V105L75 127L115 105V65"/><circle class="solid" cx="75" cy="25" r="6"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">06 / Academic background</div><h2>Education</h2></div><div class="timeline"><div class="edu"><div class="edu-visual"><span>PhD</span><span>MCA</span><span>BCA</span></div></div><div class="edu"><h3>PhD Scholar — Computer Science</h3><p>SNS College · Current</p><p>Research focus: Computer Networks, Cybersecurity and AI-driven network optimization.</p></div><div class="edu"><h3>Master of Computer Applications (MCA)</h3><p>KIT – Kalaignarkarunanidhi Institute of Technology, Coimbatore</p></div><div class="edu"><h3>Bachelor of Computer Applications (BCA)</h3><p>Undergraduate degree in Computer Applications</p></div></div></div></section>
+<section class="contact reveal" id="contact"><div class="wrap"><svg class="contact-orbit" viewBox="0 0 210 110" aria-hidden="true"><circle cx="105" cy="55" r="42"/><circle cx="105" cy="55" r="26"/><circle class="dot" cx="105" cy="13" r="5"/><circle class="dot" cx="147" cy="55" r="4"/></svg><div class="visual-strip"></div><div class="section-head"><div class="kicker">07 / Contact</div><h2>Let's connect</h2><p>For research collaboration, academic discussions and professional opportunities.</p></div><div class="contact-box"><div><h3>Ajayanand K.</h3><p>PhD Scholar · Computer Science</p><p style="font-size:.82rem">Add your preferred contact details and profile links below.</p></div><div class="contact-links"><a href="mailto:kajayanand@gmail.com">Email</a><a href="https://www.linkedin.com/in/ajayanand-k-27777kk/" target="_blank" rel="noopener">LinkedIn</a><a href="https://scholar.google.com/citations?hl=en&user=XqieF3wAAAAJ" target="_blank" rel="noopener">Google Scholar</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Ajayanand K. Portfolio</span><span>Computer Science · Networks · Cybersecurity · AI</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+ if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}
+}), {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+document.querySelectorAll('.cards .card,.project-list-card,.skill-group,.visual-card').forEach((el,i)=>{
+ el.classList.add('reveal');el.style.transitionDelay=(i%4*90)+'ms';revealObserver.observe(el);
+});</script>
+</body></html>
